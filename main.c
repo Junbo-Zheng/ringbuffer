@@ -1,7 +1,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-#include "ringbuffer.h"
+#include "./src/ringbuffer.h"
 
 int main(void)
 {

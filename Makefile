@@ -2,7 +2,9 @@ cxx = clang
 
 prom = main
 deps = $(shell find ./ -name "*.h")
-src = $(shell find ./ -name "*.c")
+# src = $(shell find ./ -name "*.c")
+src = main.c
+src += ./src/ringbuffer.c
 
 obj = $(src:%.c=%.o)
 LIBS:= -std=c17
@@ -17,3 +19,4 @@ $(prom): $(obj)
 clean:
 	rm -rf $(prom)
 	rm -rf *.o
+	rm -rf ./src/*.o

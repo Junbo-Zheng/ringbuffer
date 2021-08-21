@@ -1,5 +1,5 @@
-#ifndef	RINGBUFFER_H_H_H
-#define	RINGBUFFER_H_H_H
+#ifndef __RINGBUFFER_H__
+#define __RINGBUFFER_H__
 
 #include <stdint.h>
 
@@ -32,4 +32,4 @@ uint32_t ringbuffer_len(struct ringbuffer *ring_buf);
 
 uint32_t ringbuffer_space_left(struct ringbuffer *ring_buf);
 
-#endif
+#endif /* __RINGBUFFER_H__ */
